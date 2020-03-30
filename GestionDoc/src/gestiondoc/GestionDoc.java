@@ -17,6 +17,12 @@ public class GestionDoc {
     public static void main(String[] args) {
         System.out.print("hola");
         System.out.print("mundo");
+        
+        int a=9, b=5, c;
+        c=a+b;
+        System.out.println("el resultado de la operación es: "+c);
+        
+        
         // TODO code application logic here
     }
     
