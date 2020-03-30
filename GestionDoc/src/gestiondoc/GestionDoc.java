@@ -15,6 +15,8 @@ public class GestionDoc {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.print("hola");
+        System.out.print("mundo");
         // TODO code application logic here
     }
     
