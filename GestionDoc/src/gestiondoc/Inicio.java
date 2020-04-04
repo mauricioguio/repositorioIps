@@ -46,6 +46,11 @@ public class Inicio extends javax.swing.JFrame {
         jBconfiguraciones.setBorderPainted(false);
         jBconfiguraciones.setContentAreaFilled(false);
         jBconfiguraciones.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBconfiguraciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBconfiguracionesActionPerformed(evt);
+            }
+        });
         getContentPane().add(jBconfiguraciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 500, -1, -1));
 
         jBgenerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono generar documento.png"))); // NOI18N
@@ -134,6 +139,11 @@ public class Inicio extends javax.swing.JFrame {
     private void jBradicarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBradicarMouseExited
        
     }//GEN-LAST:event_jBradicarMouseExited
+
+    private void jBconfiguracionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBconfiguracionesActionPerformed
+        LogAdmin lg = new LogAdmin();
+        lg.setVisible(true);
+    }//GEN-LAST:event_jBconfiguracionesActionPerformed
 
     /**
      * @param args the command line arguments
