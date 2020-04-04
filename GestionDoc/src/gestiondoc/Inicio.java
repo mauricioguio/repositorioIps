@@ -5,7 +5,6 @@
  */
 package gestiondoc;
 
-import AppPackage.AnimationClass;
 import javax.swing.JOptionPane;
 
 
