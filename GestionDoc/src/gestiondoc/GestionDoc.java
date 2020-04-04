@@ -15,13 +15,8 @@ public class GestionDoc {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //hjkhkjkhjhj
-        System.out.print("hola");
-        System.out.print("mundo");
-        
-        int a=9, b=5, c;
-        c=a+b;
-        System.out.println("el resultado de la operación es: "+c);
+        Inicio inicio = new Inicio();
+        inicio.setVisible(true);
         
         
         // TODO code application logic here
