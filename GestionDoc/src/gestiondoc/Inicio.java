@@ -33,8 +33,10 @@ public class Inicio extends javax.swing.JFrame {
         jBradicar = new javax.swing.JButton();
         jBexterna = new javax.swing.JButton();
         jBvisualizar = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         jLcerrar = new javax.swing.JLabel();
         jLminimizar = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -46,12 +48,14 @@ public class Inicio extends javax.swing.JFrame {
         jBconfiguraciones.setBorderPainted(false);
         jBconfiguraciones.setContentAreaFilled(false);
         jBconfiguraciones.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBconfiguraciones.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono configuraciones on.png"))); // NOI18N
         getContentPane().add(jBconfiguraciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 500, -1, -1));
 
         jBgenerar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono generar documento.png"))); // NOI18N
         jBgenerar.setBorder(null);
         jBgenerar.setContentAreaFilled(false);
         jBgenerar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBgenerar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono generar on.png"))); // NOI18N
         getContentPane().add(jBgenerar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, -1, -1));
 
         jBradicar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconos radicar documento.png"))); // NOI18N
@@ -60,8 +64,7 @@ public class Inicio extends javax.swing.JFrame {
         jBradicar.setContentAreaFilled(false);
         jBradicar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBradicar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono radicar on.png"))); // NOI18N
-        jBradicar.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono radicar on.png"))); // NOI18N
-        jBradicar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono radicar on.png"))); // NOI18N
+        jBradicar.setVerifyInputWhenFocusTarget(false);
         jBradicar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 jBradicarMouseMoved(evt);
@@ -79,6 +82,7 @@ public class Inicio extends javax.swing.JFrame {
         jBexterna.setBorderPainted(false);
         jBexterna.setContentAreaFilled(false);
         jBexterna.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jBexterna.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono docexterna on.png"))); // NOI18N
         getContentPane().add(jBexterna, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, -1, -1));
 
         jBvisualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconos visualizar factura.png"))); // NOI18N
@@ -87,27 +91,52 @@ public class Inicio extends javax.swing.JFrame {
         jBvisualizar.setContentAreaFilled(false);
         jBvisualizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBvisualizar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono visualizar on.png"))); // NOI18N
-        jBvisualizar.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono visualizar on.png"))); // NOI18N
-        jBvisualizar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono visualizar on.png"))); // NOI18N
-        getContentPane().add(jBvisualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 500, 100, 110));
+        jBvisualizar.setVerifyInputWhenFocusTarget(false);
+        getContentPane().add(jBvisualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 500, 96, -1));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        jPanel1.setMinimumSize(new java.awt.Dimension(767, 27));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLcerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cerrar2.png"))); // NOI18N
         jLcerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLcerrar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLcerrarMouseMoved(evt);
+            }
+        });
         jLcerrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLcerrarMouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLcerrarMouseExited(evt);
+            }
         });
-        getContentPane().add(jLcerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(738, 2, -1, -1));
+        jPanel1.add(jLcerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(728, 0, -1, -1));
 
         jLminimizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/minimizar2.png"))); // NOI18N
         jLminimizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLminimizar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLminimizarMouseMoved(evt);
+            }
+        });
         jLminimizar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLminimizarMouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLminimizarMouseExited(evt);
+            }
         });
-        getContentPane().add(jLminimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(705, 2, -1, -1));
+        jPanel1.add(jLminimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(683, 0, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logoFMTS.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 3, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 766, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Fundacion mira tu salud.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -134,6 +163,22 @@ public class Inicio extends javax.swing.JFrame {
     private void jBradicarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBradicarMouseExited
        
     }//GEN-LAST:event_jBradicarMouseExited
+
+    private void jLcerrarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLcerrarMouseMoved
+        jLcerrar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0,0,10)));
+    }//GEN-LAST:event_jLcerrarMouseMoved
+
+    private void jLcerrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLcerrarMouseExited
+        jLcerrar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255,255,255)));
+    }//GEN-LAST:event_jLcerrarMouseExited
+
+    private void jLminimizarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLminimizarMouseMoved
+        jLminimizar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0,0,10)));
+    }//GEN-LAST:event_jLminimizarMouseMoved
+
+    private void jLminimizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLminimizarMouseExited
+        jLminimizar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255,255,255)));
+    }//GEN-LAST:event_jLminimizarMouseExited
 
     /**
      * @param args the command line arguments
@@ -177,7 +222,9 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JButton jBradicar;
     private javax.swing.JButton jBvisualizar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLcerrar;
     private javax.swing.JLabel jLminimizar;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
