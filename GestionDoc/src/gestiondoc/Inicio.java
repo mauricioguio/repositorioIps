@@ -34,9 +34,10 @@ public class Inicio extends javax.swing.JFrame {
         jBexterna = new javax.swing.JButton();
         jBvisualizar = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLcerrar = new javax.swing.JLabel();
-        jLminimizar = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -63,6 +64,8 @@ public class Inicio extends javax.swing.JFrame {
         jBgenerar.setContentAreaFilled(false);
         jBgenerar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBgenerar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono generar on.png"))); // NOI18N
+        jBgenerar.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono generar on.png"))); // NOI18N
+        jBgenerar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono generar on.png"))); // NOI18N
         getContentPane().add(jBgenerar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, -1, -1));
 
         jBradicar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconos radicar documento.png"))); // NOI18N
@@ -71,6 +74,8 @@ public class Inicio extends javax.swing.JFrame {
         jBradicar.setContentAreaFilled(false);
         jBradicar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBradicar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono radicar on.png"))); // NOI18N
+        jBradicar.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono radicar on.png"))); // NOI18N
+        jBradicar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono radicar on.png"))); // NOI18N
         jBradicar.setVerifyInputWhenFocusTarget(false);
         jBradicar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
@@ -90,6 +95,8 @@ public class Inicio extends javax.swing.JFrame {
         jBexterna.setContentAreaFilled(false);
         jBexterna.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBexterna.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono docexterna on.png"))); // NOI18N
+        jBexterna.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono docexterna on.png"))); // NOI18N
+        jBexterna.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono docexterna on.png"))); // NOI18N
         getContentPane().add(jBexterna, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, -1, -1));
 
         jBvisualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconos visualizar factura.png"))); // NOI18N
@@ -98,50 +105,49 @@ public class Inicio extends javax.swing.JFrame {
         jBvisualizar.setContentAreaFilled(false);
         jBvisualizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jBvisualizar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono visualizar on.png"))); // NOI18N
+        jBvisualizar.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono visualizar on.png"))); // NOI18N
+        jBvisualizar.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono visualizar on.png"))); // NOI18N
         jBvisualizar.setVerifyInputWhenFocusTarget(false);
         getContentPane().add(jBvisualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 500, 96, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         jPanel1.setMinimumSize(new java.awt.Dimension(767, 27));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLcerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cerrar2.png"))); // NOI18N
-        jLcerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLcerrar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                jLcerrarMouseMoved(evt);
-            }
-        });
-        jLcerrar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLcerrarMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLcerrarMouseExited(evt);
-            }
-        });
-        jPanel1.add(jLcerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(728, 0, -1, -1));
-
-        jLminimizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/minimizar2.png"))); // NOI18N
-        jLminimizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLminimizar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseMoved(java.awt.event.MouseEvent evt) {
-                jLminimizarMouseMoved(evt);
-            }
-        });
-        jLminimizar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLminimizarMouseClicked(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLminimizarMouseExited(evt);
-            }
-        });
-        jPanel1.add(jLminimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(683, 0, -1, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logoFMTS.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logoFMTS_1.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 3, -1, -1));
+
+        jLabel3.setForeground(new java.awt.Color(140, 147, 153));
+        jLabel3.setText("Fundación Médica Mira tu Salud");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 6, -1, -1));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cerrar2.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cerrar on.png"))); // NOI18N
+        jButton1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cerrar on.png"))); // NOI18N
+        jButton1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cerrar on.png"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(726, 1, -1, -1));
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/minimizar2.png"))); // NOI18N
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/minimizar on.png"))); // NOI18N
+        jButton2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/minimizar on.png"))); // NOI18N
+        jButton2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/minimizar on.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(685, 1, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 766, 30));
 
@@ -150,18 +156,6 @@ public class Inicio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jLcerrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLcerrarMouseClicked
-        int dialog = JOptionPane.YES_NO_OPTION;
-        int result = JOptionPane.showConfirmDialog(null, "Desea salir de esta ventana?","Exit",dialog);
-        if(result == 0){
-            System.exit(0);
-        }
-    }//GEN-LAST:event_jLcerrarMouseClicked
-
-    private void jLminimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLminimizarMouseClicked
-        this.setState(Inicio.ICONIFIED);        // TODO add your handling code here:
-    }//GEN-LAST:event_jLminimizarMouseClicked
 
     private void jBradicarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBradicarMouseMoved
         
@@ -175,21 +169,18 @@ public class Inicio extends javax.swing.JFrame {
         LogAdmin lg = new LogAdmin();
         lg.setVisible(true);
     }//GEN-LAST:event_jBconfiguracionesActionPerformed
-    private void jLcerrarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLcerrarMouseMoved
-        jLcerrar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0,0,10)));
-    }//GEN-LAST:event_jLcerrarMouseMoved
 
-    private void jLcerrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLcerrarMouseExited
-        jLcerrar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255,255,255)));
-    }//GEN-LAST:event_jLcerrarMouseExited
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        this.setState(Inicio.ICONIFIED); 
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jLminimizarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLminimizarMouseMoved
-        jLminimizar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0,0,10)));
-    }//GEN-LAST:event_jLminimizarMouseMoved
-
-    private void jLminimizarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLminimizarMouseExited
-        jLminimizar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255,255,255)));
-    }//GEN-LAST:event_jLminimizarMouseExited
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        int dialog = JOptionPane.YES_NO_OPTION;
+        int result = JOptionPane.showConfirmDialog(null, "Desea salir de esta ventana?","Exit",dialog);
+        if(result == 0){
+            dispose();
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -231,11 +222,12 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JButton jBexterna;
     private javax.swing.JButton jBgenerar;
     private javax.swing.JButton jBradicar;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jBvisualizar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLcerrar;
-    private javax.swing.JLabel jLminimizar;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
