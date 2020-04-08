@@ -21,8 +21,8 @@ public class LogAdmin extends javax.swing.JFrame {
     public LogAdmin() {
         initComponents();
         this.setLocationRelativeTo(null);
-        holder = new PlaceHolder(jTusuario,"Ingrese su usuario");
-        holder = new PlaceHolder(jPassword,"ingrese su contraseña");
+        holder = new PlaceHolder(jTusuario," Ingrese su usuario");
+        holder = new PlaceHolder(jPassword," Password");
     }
 
     /**
@@ -39,12 +39,12 @@ public class LogAdmin extends javax.swing.JFrame {
         jTusuario = new javax.swing.JTextField();
         jPassword = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -55,27 +55,28 @@ public class LogAdmin extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(140, 147, 152));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono usuario.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(140, 147, 153));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icono contraseña.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, -1, -1));
 
         jTusuario.setBackground(new java.awt.Color(230, 231, 232));
         jTusuario.setForeground(new java.awt.Color(0, 0, 10));
         jTusuario.setToolTipText("");
         jTusuario.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jTusuario.setDisabledTextColor(new java.awt.Color(140, 147, 153));
         jTusuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTusuarioActionPerformed(evt);
             }
         });
-        getContentPane().add(jTusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 340, 170, 26));
+        getContentPane().add(jTusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, 170, 26));
 
         jPassword.setBackground(new java.awt.Color(230, 231, 232));
         jPassword.setBorder(javax.swing.BorderFactory.createCompoundBorder());
-        getContentPane().add(jPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, 170, 26));
+        getContentPane().add(jPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 170, 26));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/boton ingresar.png"))); // NOI18N
         jButton1.setBorder(null);
@@ -84,11 +85,12 @@ public class LogAdmin extends javax.swing.JFrame {
         jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/boton ingresar on.png"))); // NOI18N
         jButton1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/boton ingresar on.png"))); // NOI18N
         jButton1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/boton ingresar on.png"))); // NOI18N
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagen usuarioConfiguraciones.png"))); // NOI18N
-        jLabel3.setPreferredSize(new java.awt.Dimension(404, 478));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 28, -1, 480));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -105,7 +107,7 @@ public class LogAdmin extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 0, -1, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(363, 0, -1, -1));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/minimizar2.png"))); // NOI18N
         jButton3.setBorder(null);
@@ -119,7 +121,7 @@ public class LogAdmin extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 0, -1, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 0, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logoFMTS_1.png"))); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 2, -1, -1));
@@ -128,7 +130,11 @@ public class LogAdmin extends javax.swing.JFrame {
         jLabel5.setText("Sign In");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 6, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 404, 30));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 4, 404, 28));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/interfazLoginAdmin.png"))); // NOI18N
+        jLabel3.setPreferredSize(new java.awt.Dimension(404, 478));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 480));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -138,17 +144,18 @@ public class LogAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_jTusuarioActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        int dialog = JOptionPane.YES_NO_OPTION;
-        int result = JOptionPane.showConfirmDialog(null, "Desea salir de esta ventana?","Exit",dialog);
-        if(result == 0){
-            dispose();
-        }
+        dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         this.setState(Inicio.ICONIFIED); 
         
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ConfiAdmin ca = new ConfiAdmin();
+        ca.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
